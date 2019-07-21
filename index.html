@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>-->
+    <script src="js/index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header .title{
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+            margin: 40px;
+        }
+        .add #addTask{
+            width: 20%;
+            margin: 10px;
+            height: 30px;
+        }
+        #btn,#all,#active,#completed,#clear{
+            height: 30px;
+            width: 7%;
+            background-color: lightpink;
+            margin: 5px;
+        }
+        #count{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .num,.btns{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1 class="title">todoList</h1>
+</div>
+<div class="container">
+    <div class="add">
+        <input type="text" id="addTask" placeholder="请输入待办事项" />
+        <input type="button" value="添加" id="btn" />
+    </div>
+    <div class="task">
+        <ul id="todo"></ul>
+        <ul id="done"></ul>
+    </div>
+    <div class="num">Left items: <span id="count"></span></div>
+    <div class="btns">
+        <button id="all">All</button>
+        <button id="active">Active</button>
+        <button id="completed">Completed</button>
+        <button id="clear">Clear Completed</button>
+    </div>
+</div>
+
+</body>
+</html>
